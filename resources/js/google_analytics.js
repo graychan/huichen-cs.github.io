@@ -17,6 +17,17 @@ function addListener(element, type, callback) {
         element.attachEvent('on' + type, callback);
 }
 
+
+function isOutboundLink(href) {
+    var localHostRE = new RegExp(location.host);
+
+    if (!localHostRE.test(href)) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
 /**
  * Function that tracks a click on an outbound link in Google Analytics.
  * This function takes a valid URL string as an argument, and uses that URL string
@@ -92,8 +103,12 @@ var filetype = new RegExp
     '(lecture[0-9]+_ex[0-9]+\\.php$)'
 );
 
+
+
 for (var i=0; i<anchors.length; i ++) {
-    addTracker(anchors[i]);
+    if (isOutboundLink(anchors[i].href)) {
+        addTracker(anchors[i]);
+    }
     /*
     if (filetype.test(anchors[i].href)) {
         addTracker(anchors[i]);
