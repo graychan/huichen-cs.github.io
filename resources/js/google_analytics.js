@@ -77,7 +77,7 @@ function addTracker(anchor)
 })(window, document, 'script', '//www.google-analytics.com/analytics.js', '__gaTracker');
 
 // notice ga has been renated to __gaTracker to avoid potential name conflict
-__gaTracker('create', 'UA-7942530-6', 'sest.vsu.edu');
+__gaTracker('create', 'UA-7942530-6', 'auto');
 __gaTracker('require', 'linkid', 'linkid.js');
 __gaTracker('send', 'pageview');
 
