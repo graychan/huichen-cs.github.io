@@ -1,0 +1,155 @@
+/*
+ * Base structure
+ * */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+      padding-top: 50px;
+}
+
+/*
+ * Sidebar
+ */
+
+.sidebar-fixed {
+}
+@media (min-width: 768px) {
+  .sidebar-fixed {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;
+  }
+}
+
+/* 
+ * counting papers
+ * */
+div.paper {
+    counter-reset: allcounter acounter year 2015;
+}
+
+div.paper ol.journal {
+    counter-reset: jcounter; 
+    padding-left: 0;
+    margin-left: 0;
+}
+
+div.paper ol > li {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+div.paper ol.conference {
+    counter-reset: ccounter;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+div.paper ol > li:before {
+    content: "[" counter(allcounter) "] ";
+    counter-increment: allcounter jcounter ccounter;
+}
+
+div.paper ol.journal > li:before {
+    content: "[" counter(allcounter) "] [J" counter(jcounter) "]. ";
+    counter-increment: allcounter jcounter;
+}
+
+div.paper ol.conference > li:before {
+    content: "[" counter(allcounter) "] [C" counter(ccounter) "]. ";
+    counter-increment: allcounter ccounter;
+}
+
+div.paper ol.byyear {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+div.paper ol.byyear > li {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+
+div.paper h3.byyear {
+    counter-reset: ycounter;
+    counter-increment: acounter year -1;
+}
+
+div.paper ol.byyear > li:before {
+    content: "[" counter(allcounter) "] [Y" counter(year) "-" counter(ycounter) "]. ";
+    counter-increment: allcounter ycounter;
+}
+
+div.paper h3.researcharea {
+    counter-reset: apcounter;
+    counter-increment: acounter;
+}
+
+
+div.paper ol.researcharea {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+div.paper ol.researcharea > li {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+div.paper ol.researcharea > li:before {
+    content: "[" counter(allcounter) "] [A" counter(acounter) "-" counter(apcounter) "]. ";
+    counter-increment: allcounter apcounter;
+}
+
+/*
+ * Footer
+ */
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+.footer {
+    position: absolute;
+    left: 0 !important;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: #f5f5f5;
+    color: #999;
+    text-align: center;
+    border-top: 1px solid #e5e5e5;
+}
+
+.footer .copyright {
+    margin-bottom: 0;
+}
+
+.footer p:last-child {
+    margin-bottom: 0;
+}
+
