@@ -1,0 +1,17 @@
+body {
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+.class-schedule {
+}
+
+.class-schedule .badge {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.class-schedule .lesson-detail {
+    margin-left: 2em;
+}
+
