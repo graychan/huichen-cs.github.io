@@ -107,13 +107,10 @@ var filetype = new RegExp
 
 for (var i=0; i<anchors.length; i ++) {
     if (isOutboundLink(anchors[i].href)) {
-        addTracker(anchors[i]);
+        if (filetype.test(anchors[i].href)) {
+            addTracker(anchors[i]);
+        }
     }
-    /*
-    if (filetype.test(anchors[i].href)) {
-        addTracker(anchors[i]);
-    }
-    */
 }
 
 
