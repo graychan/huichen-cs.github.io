@@ -118,12 +118,12 @@ var filetype = new RegExp
 
 
 for (var i=0; i<anchors.length; i ++) {
-    console.log("Before: " + anchors[i].href);
+    // console.log("Before: " + anchors[i].href);
     if (filetype.test(anchors[i].href)) {
-        console.log("Track: " + anchors[i].href);
+        // console.log("Track: " + anchors[i].href);
         addTracker(anchors[i]);
     } else if (isOutboundLink(anchors[i].href)) {
-        console.log("Track: " + anchors[i].href);
+        // console.log("Track: " + anchors[i].href);
         addTracker(anchors[i]);
     }
 }

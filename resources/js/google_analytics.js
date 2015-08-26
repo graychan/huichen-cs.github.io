@@ -20,12 +20,24 @@ function addListener(element, type, callback) {
 
 function isOutboundLink(href) {
     var localHostRE = new RegExp(location.host);
+    var httpLead = new RegExp("^http", "i");
 
     if (!localHostRE.test(href)) {
+        if (httpLead.test(href)) {
+            return true;
+        } else { 
+            return false;
+        }
+    } else {
+        return false;
+    }
+    /*
+    if (!localHostRE.test(href) && httpLead.test(href)) {
         return true;
     } else {
         return false;
     }
+    */
 }
 
 /**
@@ -106,14 +118,14 @@ var filetype = new RegExp
 
 
 for (var i=0; i<anchors.length; i ++) {
-    if (isOutboundLink(anchors[i].href)) {
-        addTracker(anchors[i]);
-    }
-    /*
+    // console.log("Before: " + anchors[i].href);
     if (filetype.test(anchors[i].href)) {
+        // console.log("Track: " + anchors[i].href);
+        addTracker(anchors[i]);
+    } else if (isOutboundLink(anchors[i].href)) {
+        // console.log("Track: " + anchors[i].href);
         addTracker(anchors[i]);
     }
-    */
 }
 
 
