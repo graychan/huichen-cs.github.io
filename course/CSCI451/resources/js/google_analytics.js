@@ -111,6 +111,11 @@ var filetype = new RegExp
     '(\\.zip$)|' + 
     '(\\.ppt$)|' + 
     '(\\.pptx$)|' + 
+    '(\\.c$)|' + 
+    '(\\.cc$)|' + 
+    '(\\.cpp$)|' + 
+    '(\\.java$)|' + 
+    '(\\.m$)|' + 
     '(lecture[0-9]+_ex[0-9]+\\.html$)|' +
     '(lecture[0-9]+_ex[0-9]+\\.php$)'
 );
