@@ -9,5 +9,5 @@ exclude:
     - LICENSE
     - README.md
     - CNAME
-    - page.template.html
+    - content/template/*
 
