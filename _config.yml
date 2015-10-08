@@ -1,0 +1,5 @@
+url: "http://huichen-cs.github.io/"
+
+gems:
+    - jekyll-sitemap
+
