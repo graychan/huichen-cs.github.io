@@ -1,5 +1,13 @@
-url: "http://huichen-cs.github.io/"
+url: "http://huichen-cs.github.io"
 
 gems:
     - jekyll-sitemap
+
+exclude:
+    - Gemfile
+    - Gemfile.lock
+    - LICENSE
+    - README.md
+    - CNAME
+    - page.template.html
 
