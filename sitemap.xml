@@ -24,16 +24,6 @@
 <url><loc>http://huichen-cs.github.io/course/CSCI445/lecture/lecture06.pdf</loc><lastmod>2015-10-08T00:40:42+00:00</lastmod></url>
 <url><loc>http://huichen-cs.github.io/course/CSCI445/lecture/lecture07.pdf</loc><lastmod>2015-09-28T18:40:02+00:00</lastmod></url>
 <url><loc>http://huichen-cs.github.io/course/CSCI445/lecture/vmsetup.pdf</loc><lastmod>2015-10-08T13:53:24+00:00</lastmod></url>
-<url><loc>http://huichen-cs.github.io/course/CSCI445/src/ethernet/buffer.c</loc><lastmod>2015-09-23T23:47:01+00:00</lastmod></url>
-<url><loc>http://huichen-cs.github.io/course/CSCI445/src/ethernet/dbglog.c</loc><lastmod>2015-09-24T13:31:31+00:00</lastmod></url>
-<url><loc>http://huichen-cs.github.io/course/CSCI445/src/ethernet/ethercap.c</loc><lastmod>2015-09-24T03:37:37+00:00</lastmod></url>
-<url><loc>http://huichen-cs.github.io/course/CSCI445/src/ethernet/etherinj.c</loc><lastmod>2015-09-23T23:48:05+00:00</lastmod></url>
-<url><loc>http://huichen-cs.github.io/course/CSCI445/src/ethernet/etherrecv.c</loc><lastmod>2015-09-23T23:48:22+00:00</lastmod></url>
-<url><loc>http://huichen-cs.github.io/course/CSCI445/src/ethernet/ethersend.c</loc><lastmod>2015-09-23T23:48:43+00:00</lastmod></url>
-<url><loc>http://huichen-cs.github.io/course/CSCI445/src/ethernet/hwaddr.c</loc><lastmod>2015-09-23T23:49:13+00:00</lastmod></url>
-<url><loc>http://huichen-cs.github.io/course/CSCI445/src/ethernet/linkutil.c</loc><lastmod>2015-09-24T04:12:29+00:00</lastmod></url>
-<url><loc>http://huichen-cs.github.io/course/CSCI445/src/ethernet/listifs.c</loc><lastmod>2015-09-24T00:04:44+00:00</lastmod></url>
-<url><loc>http://huichen-cs.github.io/course/CSCI445/src/ethernet/sighandler.c</loc><lastmod>2015-09-23T23:49:47+00:00</lastmod></url>
 <url><loc>http://huichen-cs.github.io/course/CSCI451/assignment/lab_01.pdf</loc><lastmod>2015-09-04T16:23:13+00:00</lastmod></url>
 <url><loc>http://huichen-cs.github.io/course/CSCI451/index.html</loc><lastmod>2015-10-07T13:43:46+00:00</lastmod></url>
 <url><loc>http://huichen-cs.github.io/course/CSCI451/notes/lecture01_overview.pdf</loc><lastmod>2015-08-24T12:06:44+00:00</lastmod></url>
