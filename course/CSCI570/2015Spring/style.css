@@ -1,0 +1,326 @@
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background: url(images/img01.jpg) repeat left top;
+	font: 13px Arial, Helvetica, sans-serif;
+	color: #212121;
+}
+
+h1, h2, h3 {
+	margin-top: 0px;
+}
+
+h1 {
+	font-size: 2.4em;
+}
+
+h2 {
+	font-size: 1.8em;
+}
+
+h3 {
+	font-size: 1.4em;
+}
+
+p, ol, ul {
+	margin-bottom: 1.8em;
+	line-height: 160%;
+}
+
+a {
+	color: #393939;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #393939;
+}
+
+a img {
+	border: none;
+}
+
+blockquote {
+	border : 2px solid #000;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: 50px;
+	margin-left: 50px;
+	padding: 10px;
+	background-color: #ccc;
+	font-style: italic;
+	quotes: "\201C" "\201D";
+}
+blockquote:before { content: open-quote; font-weight: bold; }
+blockquote:after { content: close-quote; font-weight: bold; }
+
+
+/* Header */
+
+#header {
+	width: 1024px;
+	height: 130px;
+	margin: 0px auto;
+}
+
+#header a {
+	text-decoration: none;
+	color: #FFFFFF;
+
+}
+
+/* Logo */
+
+#logo {
+	float: left;
+	padding-left: 180px;
+	background: url(images/vsunewlogobwsmall.gif) no-repeat left top;
+}
+
+#logo h1, #logo p {
+	margin: 0px;
+	line-height: normal;
+	font-weight: normal;
+	color: #393939;
+}
+
+#logo h2 {
+	margin: 0px;
+	line-height: normal;
+	font: 16px Arial, Helvetica, sans-serif;
+	color: #393939;
+}
+
+#logo p {
+	padding-left: 3px;
+	padding-bottom: 25px;
+	font: 13px Arial, Helvetica, sans-serif;
+	font-style: italic
+}
+
+#logo h1 {
+	padding: 10px 0px 0px 0px;
+}
+
+#logo a {
+	color: #393939;
+	text-decoration: underline;
+}
+
+#logo a:hover {
+	text-decoration: none;
+}
+
+/* Menu */
+
+#menu {
+	float: right;
+	margin: 30px 0 0 0;
+}
+
+#menu ul {
+	margin: 0px 0 0 0;
+	padding: 0px 0px 0px 0px;
+	list-style: none;
+	line-height: normal;
+}
+
+#menu li {
+	float: left;
+	margin: 0px 0px 0px 1px;
+}
+
+#menu a {
+	display: block;
+	width: auto;
+	height: 28px;
+	padding: 8px 20px 0px 20px;
+	background: #393939;
+}
+
+#menu a:hover {
+	text-decoration: underline;
+}
+
+#menu .first {
+	background: none;
+}
+
+#menu .active a {
+}
+
+/* Page */
+
+#page {
+	width: 1024px;
+	margin: 0px auto;
+	padding: 30px 0px;
+}
+
+/* Content */
+
+#content {
+	float: left;
+	width: 1024px;
+}
+
+#contentfull {
+	width: 1024px;
+}
+
+.post {
+	margin: 0px 0px 30px 0px;
+}
+
+.post .title {
+	margin: 0px;
+	padding: 0px 0px 5px 0px;
+	border-bottom: #BFC9AE dashed 1px;
+	color: #232F01;
+}
+
+.post .title a {
+	color: #232F01;
+}
+
+.post .entry {
+}
+
+.post .meta {
+	font-weight: bold;
+}
+
+.post .byline {
+	margin: 0px;
+	color: #5E5E5E;
+}
+
+/* Sidebar */
+
+#sidebar {
+	float: right;
+	width: 300px;
+}
+
+#sidebar-bgtop {
+	height: 3px;
+}
+
+#sidebar-bgbtm {
+	height: 3px;
+}
+
+#sidebar-content {
+	padding: 20px;
+}
+
+#sidebar ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+#sidebar li ul {
+	margin-bottom: 1.8em;
+	list-style: none;
+}
+
+#sidebar li li {
+	padding: 5px 0;
+	border-bottom: #BFC9AE dashed 1px;
+}
+
+#sidebar h2 {
+	padding: 4px 20px;
+	background: #393939;
+	font-size: 1.2em;
+	color: #FFFFFF;
+}
+
+#sidebar a {
+	text-decoration: none;
+	color: #232F01;
+}
+
+#sidebar a:hover {
+	text-decoration: underline;
+}
+
+/* Search */
+
+#search {
+}
+
+#search form {
+	margin-bottom: 1.8em;
+	padding: 0px;
+}
+
+#search fieldset {
+	margin: 0px;
+	padding: 0px;
+	border: none;
+}
+
+#search #s {
+	width: 160px;
+}
+
+/* Footer */
+
+#footer {
+	clear: both;
+	width: 1024px;
+	height: 50px;
+	margin: 0px auto 30px auto;
+	color: #FFFFFF;
+	background: #393939;
+}
+
+#footer p {
+	margin: 0px;
+	padding: 19px 0px 0px 0px;
+	text-align: center;
+	line-height: normal;
+	font-size: smaller;
+}
+
+#footer a {
+	color: #FFFFFF;
+}
+
+/* Table */
+table {
+	border-width: thin;
+	border-spacing: 0px;
+	border-style: outset;
+	border-color: gray;
+	border-collapse: collapse;
+	background-color: white;
+}
+table th {
+	border-width: thin;
+	padding:6px;
+	border-style: outset;
+	border-color: gray;
+	background-color: white;
+	-moz-border-radius: ;
+}
+table td {
+	border-width: thin;
+	padding: 3px;
+	border-style: outset;
+	border-color: gray;
+	background-color: white;
+	-moz-border-radius: ;
+}
+
+table td.center {
+    text-align: center;
+}
+
+.standout {
+    color: red;       
+}
+
