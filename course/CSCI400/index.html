@@ -63,6 +63,7 @@
 
           <ul class="nav nav-tabs">
             <li class="active"><a href="#tab-home" data-toggle="tab">Content</a></li>
+            <li><a href="#tab-schedule" data-toggle="tab">Schedule</a></li>
             <li><a href="#tab-resources" data-toggle="tab">Resources</a></li>
           </ul>
 
@@ -84,6 +85,89 @@
                 Prerequisites: Senior level standing in Computer Science or consent of Instructor
               </p>
             </div>
+
+            <div class="tab-pane" id="tab-schedule">
+                <h2>Class Schedule</h2>
+                <ol class="list-group">
+                    <li class="list-group-item">
+                    <h3>
+                        <span class="badge">01/15/2016</span>
+                        General Introduction
+                    </h3>
+                    </li>
+                    <li class="list-group-item">
+                    <h3>
+                        <span class="badge">01/22/2016</span>
+                        University Closed (due to Inclement Weather)
+                    </h3>
+                    </li>
+
+                    <li class="list-group-item">
+                    <h3>
+                        <span class="badge">01/29/2016</span>
+                        On Reading 
+                    </h3>
+                    <div class="lesson-detail">
+                        <p><em>Reading Assignment:</em></p>
+                        <ol class="list-group">
+                            <li class="list-group-item">
+                                <a href="http://blizzard.cs.uwaterloo.ca/keshav/home/Papers/data/07/paper-reading.pdf">S. Keshav</a>. 2007. How to read a paper. SIGCOMM Comput. Commun. Rev. 37, 3 (July 2007), 83-84. DOI=10.1145/1273445.1273458 
+                                <a href="http://doi.acm.org/10.1145/1273445.1273458">http://doi.acm.org/10.1145/1273445.1273458</a>
+                            </li>
+                            <li class="list-group-item">
+                            <a href="https://www.cl.cam.ac.uk/teaching/1415/C00/L1-FB-read-prog.html">
+                                How to Do a Technical Reading Program
+                            </a>, 
+                            <a href="https://www.cs.unc.edu/~brooks/">
+                                Frederick Brooks
+                            </a>, 4 February 2008, 
+                            with minor amendments by 
+                            <a href="https://www.cl.cam.ac.uk/~nad10/">
+                                Neil Dodgson
+                            </a>, 4 October 2011. 
+                            </li>
+                            <li class="list-group-item">
+                                <a data-toggle="modal" data-target="#natureOfPaperModal">
+                                    On "Nature of Paper"
+                                </a>, an expert from the University of
+                                Cambridge's 
+                                    <a href="https://www.cl.cam.ac.uk/teaching/1415/C00/reading.html">
+                                        Reading Skills
+                                    </a> course material.
+                            </li>
+                            <li class="list-group-item">
+                                <a data-toggle="modal" data-target="#aWayToReadModal">
+                                    "A way to read" papers
+                                </a>, an expert from the University of
+                                Cambridge's 
+                                    <a href="https://www.cl.cam.ac.uk/teaching/1415/C00/reading.html">
+                                        Reading Skills
+                                    </a> course material.
+                            </li>
+                        </ol>
+                    </div>
+                    </li>
+
+                    <li class="list-group-item">
+                    <h3>
+                        <span class="badge">01/29/2016</span>
+                        On Writing and Writing Tools 
+                    </h3>
+                    <div class="lesson-detail">
+                        <p><em>Reading Assignment:</em></p>
+                        <ol class="list-group-item">
+                            <li class="list-group-item">               
+                                Gopen, George D., and Judith A. Swan. 
+                                "<a href="https://faculty.washington.edu/heagerty/Courses/b572/public/GopenSwan.pdf">
+                                    The science of scientific writing</a>." 
+                                American Scientist (1990): 550-558.
+                            </li>
+                        </ol>
+                    </div>
+                    </li>
+                </ol>
+            </div>
+            
 
             <div class="tab-pane" id="tab-resources">
               <h2>On Reading</h2>
@@ -157,7 +241,7 @@
                     The Univeristiy of Chicago Writing Program
                 </li>
                 <li class="list-group-item">               
-                    <a href="http://afterdeadline.blogs.nytimes.com/">The New York Times's After Deadline blog</a>, 
+                    <a href="http://afterdeadline.blogs.nytimes.com/">The New York Times' After Deadline blog</a>, 
                     The New York Times
                 </li>
                 <li class="list-group-item">               
@@ -236,6 +320,161 @@
                 </li>
             </ul>
 
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="aWayToReadModal" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h3 class="modal-title">On "Nature Of Paper"</h3>
+              </div>
+              <div class="modal-body">
+                  <p><em>Acknowledgement:</em> 
+                    This is an expert from the University of Cambridge's
+                    <a href="https://www.cl.cam.ac.uk/teaching/1415/C00/reading.html">
+                        Reading Skills
+                    </a> course material.
+                  </p>
+                  <p>
+                  C.E.M. Joad wrote <a href="https://books.google.com/books/about/Teach_Yourself_Philosophy.html?id=EeOxGAAACAAJ">Teach Yourself Philosophy</a> in 1944. His
+                    advice can be applied to reading scientific papers. He
+                    says:
+                  </p>
+
+                  <p>
+                  <em>Make judicious selection</em>. In philosophy Joad says "Never
+                    try to read a whole book at once." In our case, do not try
+                    to read all the papers on a subject at once. Joad says
+                    "pick out certain chapters, two or three perhaps, which
+                    deal with matters that seem to you to be of particular
+                    importance or which relate to topics on which you have
+                    already read something." We need to pick out those papers
+                    that are of most importance to the problem in hand. Of
+                    philosophy books, Joad says "Use the introduction and
+                    preface to help you identify these." In our case, we need
+                    to use something else to determine which papers we should
+                    attend to. See Fred Brooks' note (above) for more on that.
+                  </p>
+
+                  <p>
+                  <em>Indulge in intelligent skipping</em>. You do not have to
+                  read everything. You do not need to read every word of every
+                  paper. Do not be embarrassed to skip. You cannot possibly
+                  read every paper in the world; you need to ensure that the
+                  ones you spend your time on are the important ones. For some
+                  papers you need only look at the introduction and conclusion,
+                  with a glance elsewhere. For some, you will need to read the
+                  whole thing, but maybe not today. Joad says "omit the
+                  unintelligible; skip the repetitions; jump over the boring
+                  bits". You are allowed to do this!
+
+                  </p>
+
+                  <p>
+                  <em>Ensure you understand</em>. Joad says stop reading when
+                  you stop understanding, but he also says to interpret
+                  "understand" generously. If you do not understand, there is
+                  sometimes point in pressing on a little further to see if it
+                  becomes clear, but if you really do not get it, there is no
+                  point in reading on for the sake of reading on. You need to
+                  stop and say "why do I not understand?"; "is this important
+                  enough that I need to learn something else so that I can
+                  understand?"
+
+                  </p>
+                              
+                  <p>
+                  <em>Make notes</em>. The process of writing notes helps
+                  enormously with remembering. The process of having to
+                  summarise someone else's work helps enormously with
+                  understanding. Exercise 1 asks you to precis the content of a
+                  four page paper in just one page. This is a great skill to
+                  have. Also you need to ensure that you have made good enough
+                  notes that you will be able to find any paper again in two
+                  years time when it turns out to be important. Too many times
+                  have I heard the cry "I know that I have read a paper on
+                  exactly this problem, but I cannot remember where!"
+                  </p>
+
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="natureOfPaperModal" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h3 class="modal-title">On "Nature Of Paper"</h3>
+              </div>
+              <div class="modal-body">
+                  <p><em>Acknowledgement:</em> 
+                    This is an expert from the University of Cambridge's
+                    <a href="https://www.cl.cam.ac.uk/teaching/1415/C00/reading.html">
+                        Reading Skills
+                    </a> course material.
+                  </p>
+
+                  <p>
+                  The starting research student assumes that all research
+                  papers are well-written and describe good research that is
+                  both correct and important. <em>This is not true</em>.  
+                  </p>
+
+                  <p>
+                  Research papers can report <em>poor research</em>. The review
+                  process is supposed to prevent this, but it is not a perfect
+                  process and there is a fair amount of published work out
+                  there that is not good. The publication venue is a guide to
+                  likely quality. A top-rank journal or conference is unlikely
+                  to publish poor research, because the review process is
+                  fierce.  A lower-rank journal or conference is more likely to
+                  let poor research through.
+                  </p>
+
+                  <p>
+                  Published research is supposed to be correct. However, there
+                  are cases where the authors and reviewers have honestly
+                  failed to notice that their data, assumptions, proofs, or
+                  conclusions are <em>wrong</em>.
+                  </p>
+
+                  <p>
+                  A big mistake made by many new researchers is to think that
+                  every single paper is important. Of course, it was important
+                  to the authors, but it may well be reporting on a dead end, a
+                  trivial result, a system that does not work well, or an idea
+                  that has been superceded. So you will find that many papers
+                  are <em>unimportant</em>, at least with respect to your
+                  particular research area.
+                  </p>
+
+                  <p>
+                  Even if a paper is good research, correct, and important, it
+                  may <em>not be well written</em>. Sadly, there are some
+                  papers that are incomprehensible. It is wrong to assume that
+                  the authors are trying to hide something in their poor
+                  writing, though this may be the case. Often it is just poor
+                  writing skills.  
+                  </p>
+                  
+                  <!--
+                  <p>
+                  Part of this course is to help you to learn
+                  how to ensure that your papers are well written.
+                  </p>
+                  -->
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
             </div>
           </div>
         </div>
