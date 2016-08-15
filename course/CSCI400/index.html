@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>CSCI 400 Senior Seminar</title>
+
+    <meta name="description" content="Professor Hui Chen's Computer Science Seminar classes.">
+    <meta name="keywords" content="CSCI400, CSCI 400, CSCI 610, CSCI610, CSCI611, CSCI 611, Senior Seminar, Computer Science Seminar, Graduate Seminar, Graduate Computer Science Seminar">
+    <meta name="author" content="Hui Chen">
+
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap theme -->
+    <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="resources/css/styles.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <span class="navbar-brand" href="#">CSCI 400</span>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a data-toggle="modal" data-target="#contactModal">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+
+    <div class="container" role="main">
+
+        <div class="page-header">
+            <h1>CSCI 400 Senior Seminar @ VSU<br/>
+                <small>by <a href="/">Hui Chen, Ph.D.</a></small></h1>
+        </div>
+
+        <div class="tabbable">
+
+          <ul class="nav nav-tabs">
+            <li class="active"><a href="#tab-home" data-toggle="tab">Content</a></li>
+            <li><a href="#tab-schedule" data-toggle="tab">Schedule</a></li>
+            <li><a href="../../content/misc/readwrite.html">Resources</a></li>
+          </ul>
+
+          <div class="tab-content">
+            <div class="tab-pane active" id="tab-home">
+              <div class="page-header">       
+                <h2>Overview</h2>
+              </div>
+              <p class="lead">
+                Discussions based on current researches that are facilitated by
+                students, faculty members, or industry representatives.
+                Students are expected to provide a written summary of each
+                discussed research paper and to participate in-class discussion.
+                Each student facilitates the discussion at least once during
+                the semester. The impact of the research in a global and
+                societal context will be discussed.
+              </p>
+              <p>
+                Prerequisites: Senior level standing in Computer Science or consent of Instructor
+              </p>
+
+              <p>
+              CSCI 400 are typically taught in conjunction with CSCI 610 
+              Graduate Seminar I and CSCI 611 Graduate Seminar II where
+              the enrolled graduate students may be subject to different
+              requirements and expectations.
+              </p>
+            </div>
+
+            <div class="tab-pane" id="tab-schedule">
+                <h2>Class Schedule</h2>
+                <ol class="list-group">
+                    <li class="list-group-item">
+                    <h3>
+                        <span class="badge">08/15/2016</span>
+                        General Introduction
+                    </h3>
+                    </li>
+
+<!--
+                    <li class="list-group-item">
+                    <h3>
+                        <span class="badge">01/22/2016</span>
+                        University Closed 
+                        (due to 
+                        <a href="https://fivethirtyeight.com/features/record-snow-dc-blizzard/">
+                            Inclement Weather
+                        </a>)
+                    </h3>
+                    </li>
+
+                    <li class="list-group-item">
+                    <h3>
+                        <span class="badge">01/29/2016</span>
+                        On Research and Reading 
+                    </h3>
+                    <div class="lesson-detail">
+                        <p><em>Reading Assignment:</em></p>
+                        <ol class="list-group">
+                            <li class="list-group-item">
+                                <a href="http://blizzard.cs.uwaterloo.ca/keshav/home/Papers/data/07/paper-reading.pdf">S. Keshav</a>. 2007. How to read a paper. SIGCOMM Comput. Commun. Rev. 37, 3 (July 2007), 83-84. DOI=10.1145/1273445.1273458 
+                                <a href="http://doi.acm.org/10.1145/1273445.1273458">http://doi.acm.org/10.1145/1273445.1273458</a>
+                            </li>
+                            <li class="list-group-item">
+                            <a href="https://www.cl.cam.ac.uk/teaching/1415/C00/L1-FB-read-prog.html">
+                                How to Do a Technical Reading Program
+                            </a>, 
+                            <a href="https://www.cs.unc.edu/~brooks/">
+                                Frederick Brooks
+                            </a>, 4 February 2008, 
+                            with minor amendments by 
+                            <a href="https://www.cl.cam.ac.uk/~nad10/">
+                                Neil Dodgson
+                            </a>, 4 October 2011. 
+                            </li>
+                            <li class="list-group-item">
+                                <a data-toggle="modal" data-target="#natureOfPaperModal">
+                                    On "Nature of Paper"
+                                </a>, an excerpt from the University of
+                                Cambridge's 
+                                    <a href="https://www.cl.cam.ac.uk/teaching/1415/C00/reading.html">
+                                        Reading Skills
+                                    </a> course material.
+                            </li>
+                            <li class="list-group-item">
+                                <a data-toggle="modal" data-target="#aWayToReadModal">
+                                    "A way to read" papers
+                                </a>, an excerpt from the University of
+                                Cambridge's 
+                                    <a href="https://www.cl.cam.ac.uk/teaching/1415/C00/reading.html">
+                                        Reading Skills
+                                    </a> course material.
+                            </li>
+                        </ol>
+                    </div>
+                    </li>
+
+                    <li class="list-group-item">
+                    <h3>
+                        <span class="badge">02/05/2016</span>
+                        On Writing and Writing Tools 
+                    </h3>
+                    <div class="lesson-detail">
+                        <p><em>Reading Assignment:</em></p>
+                        <ol class="list-group">
+                            <li class="list-group-item">               
+                                Gopen, George D., and Judith A. Swan. 
+                                <a href="https://faculty.washington.edu/heagerty/Courses/b572/public/GopenSwan.pdf">
+                                    The science of scientific writing</a>. 
+                                American Scientist (1990): 550-558.
+                            </li>
+                        </ol>
+                    </div>
+                    </li>
+
+                    <li class="list-group-item">
+                    <h3>
+                        <span class="badge">02/12/2016</span>
+                        On Technical Presentation
+                    </h3>
+                    <div class="lesson-detail">
+                        <p><em>Watch:</em></p>
+                        <ol class="list-group">
+                            <li class="list-group-item">               
+                            <a href="https://www.youtube.com/watch?v=i68a6M5FFBc">
+                                How to Give an Awesome (PowerPoint) Presentation (a Youtube Video),
+                            </a>, by Marc Strong and Wienotfilms.com
+                            </li>
+                            <li class="list-group-item">               
+                                <a href="https://vimeo.com/51597270">
+                                    How NOT to give a presentation, 
+                                </a> by 
+                                <a href="https://www.cl.cam.ac.uk/~nad10/">Neil Dodgson</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="http://sms.csx.cam.ac.uk/media/1808399/">
+                                    Laying out presentation slides,
+                                </a> 
+                                by <a href="https://www.cl.cam.ac.uk/~nad10/">Neil Dodgson</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="http://sms.csx.cam.ac.uk/media/1808417/">
+                                    "The Gettysburg Address", 
+                                </a> 
+                                by <a href="https://www.cl.cam.ac.uk/~nad10/">Neil Dodgson</a>
+                            </li>
+                        </ol>
+
+                        <p><em>Resources:</em></p>
+                        <ol class="list-group">
+                            <li class="list-group-item">
+                                The 
+                                    <a href="https://www.cl.cam.ac.uk/teaching/1415/C00/presenting.html">
+                                        <em>Reading Skills</em>
+                                    </a> class, offered by
+                                the Computer Laboratory, the University of
+                                Cambridge
+                            </li>
+                            <li class="list-group-item">               
+                                Zobel, Justin. 
+                                <a href="https://books.google.com/books?id=LWCYBgAAQBAJ&amp;lpg=PR6&amp;ots=DhezjBP3xb&amp;lr&amp;pg=PR2#v=onepage&amp;q&amp;f=false">
+                                    Writing for Computer Science. 
+                                </a>
+                                3rd Ed. Springer, 2015.
+                            </li>
+                            <li class="list-group-item">               
+                                Reynolds, Garr. 
+                                <a href="https://books.google.com/books?id=m1xt5IMJbXAC&amp;lpg=PT10&amp;ots=agXTWRAgfY&amp;lr&amp;pg=PT10#v=onepage&amp;q&amp;f=false">
+                                    Presentation Zen: Simple ideas
+                                    on presentation design and delivery. 
+                                </a>
+                                New Riders, 2011. 
+                            </li>
+                            <li class="list-group-item">               
+                                Heath, Chip, and Dan Heath. 
+                                <a href="https://books.google.com/books?id=Yfp79AAohiMC&amp;lpg=PT6&amp;ots=sW4lVn1Pet&amp;lr&amp;pg=PT1#v=onepage&amp;q&amp;f=false">
+                                    Made to stick: Why some ideas survive and
+                                    others die.
+                                </a> Random House, 2007.
+                            </li>
+                        </ol>
+                    </div>
+                    </li>
+
+                    <li class="list-group-item">
+                    <h3>
+                        <span class="badge">02/19/2016</span>
+                        On Technical Presentation: Examples
+                    </h3>
+                    <div class="lesson-detail">
+                        <p><em>Watch Selected Presentation Videos:</em></p>
+                        <ol class="list-group">
+                            <li class="list-group-item">               
+                            <a href="https://www.usenix.org/conference/nsdi15/technical-sessions">
+                                Technical Programs at the 12th USENIX Symposium on Networked System Design and Implementation
+                            </a>
+                            </li>
+                        </ol>
+                    </div>
+                    </li>
+
+                    <li class="list-group-item">
+                    <h3>
+                        <span class="badge">02/26/2016</span>
+                        Student Presentations (D. Dickerson; T. Hayes) 
+                    </h3>
+                    </li>
+                 
+                    <li class="list-group-item">
+                    <h3>
+                        <span class="badge">03/04/2016</span>
+                        On Online Privacy
+                    </h3>
+                    </li>
+
+                    <li class="list-group-item">
+                    <h3>
+                        <span class="badge">03/11/2016</span>
+                        Spring Break; No Class
+                    </h3>
+                    </li>
+
+                    <li class="list-group-item">
+                    <h3>
+                        <span class="badge">03/18/2016</span>
+                        Student Presentations (D. Simpson) 
+                    </h3>
+                    </li>
+
+                    <li class="list-group-item">
+                    <h3>
+                        <span class="badge">03/25/2016</span>
+                        On Graphing
+                    </h3>
+                    </li>
+
+                    <li class="list-group-item">
+                    <h3>
+                        <span class="badge">04/01/2016</span>
+                        On Design of Experiments
+                    </h3>
+                    <div class="lesson-detail">
+                        <p><em>Reading:</em></p>
+                        <ol class="list-group">
+                            <li class="list-group-item">               
+                            Sacks, Jerome, William J. Welch, Toby J. Mitchell,
+                            and Henry P. Wynn. 1989. &quot;Design and Analysis
+                            of Computer Experiments&quot;. Statistical Science
+                            4 (4).  Institute of Mathematical Statistics:
+                            409–23.
+                            <a href="http://www.jstor.org/stable/2245858">
+                                http://www.jstor.org/stable/2245858
+                            </a>.
+                            </li>
+
+                            <li class="list-group-item">
+                            Zelkowitz, Marvin V., and Dolores R. Wallace.
+                            &quot;<a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=675630&isnumber=14870">
+                                Experimental models for validating technology.
+                            </a>&quot;
+                            Computer 31, no. 5 (1998): 23-31.
+                            </li>
+
+                            <li class="list-group-item">
+                            Tichy, Walter F. &quot;
+                            <a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=675631&isnumber=14870">
+                                Should computer scientists experiment more?.
+                            </a>&quot; 
+                            Computer 5 (1998): 32-40.
+                            </li>
+
+                            <li class="list-group-item">
+                            Carroll, John M. &quot;
+                            <a href="http://dx.doi.org/10.1146/annurev.psych.48.1.61">
+                                Human-computer interaction: psychology as a
+                                science of design.
+                            </a>&quot; 
+                            Annual review of psychology 48, no. 1 (1997):
+                            61-83.
+                            </li>
+
+                            <li class="list-group-item">
+                            Denning, Peter J. 
+                            &quot;
+                            <a href="http://dx.doi.org/10.1145/1053291.1053309">
+                                Is computer science science?.
+                            </a>&quot;
+                            Communications of the ACM 48, no. 4 (2005): 27-31.
+                            </li>
+-->
+
+                        </ol>
+                    </div>
+
+                    </li>
+
+                    <li class="list-group-item">
+                    <h3>
+                        <span class="badge">04/08/2016</span>
+                        Student Presentations (C. Henry; D. Simpson) 
+                    </h3>
+                    </li>
+
+                    <li class="list-group-item">
+                    <h3>
+                        <span class="badge">04/15/2016</span>
+                        Student Presentations (A. Maples; R. Ghosh)
+                    </h3>
+                    </li>
+
+                    <li class="list-group-item">
+                    <h3>
+                        <span class="badge">04/22/2016</span>
+                        Student Presentations (C. Henry; R. Ghosh)
+                    </h3>
+                    </li>
+
+                    <li class="list-group-item">
+                    <h3>
+                        <span class="badge">04/29/2016</span>
+                        Student Presentations (R. Ghosh; T. Hayes)
+                    </h3>
+                    </li>
+
+                    <li class="list-group-item">
+                    <h3>
+                        <span class="badge">05/03 - 05/06</span>
+                        Final Exam Period
+                    </h3>
+                    </li>
+
+                </ol>
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="modal fade" id="aWayToReadModal" role="dialog">
+          <div class="content-modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h3 class="modal-title">On "Nature Of Paper"</h3>
+              </div>
+              <div class="modal-body">
+                  <p><em>Acknowledgement:</em> 
+                    This is an excerpt from the University of Cambridge's
+                    <a href="https://www.cl.cam.ac.uk/teaching/1415/C00/reading.html">
+                        Reading Skills
+                    </a> course material.
+                  </p>
+                  <p>
+                  C.E.M. Joad wrote <a href="https://books.google.com/books/about/Teach_Yourself_Philosophy.html?id=EeOxGAAACAAJ">Teach Yourself Philosophy</a> in 1944. His
+                    advice can be applied to reading scientific papers. He
+                    says:
+                  </p>
+
+                  <p>
+                  <em>Make judicious selection</em>. In philosophy Joad says "Never
+                    try to read a whole book at once." In our case, do not try
+                    to read all the papers on a subject at once. Joad says
+                    "pick out certain chapters, two or three perhaps, which
+                    deal with matters that seem to you to be of particular
+                    importance or which relate to topics on which you have
+                    already read something." We need to pick out those papers
+                    that are of most importance to the problem in hand. Of
+                    philosophy books, Joad says "Use the introduction and
+                    preface to help you identify these." In our case, we need
+                    to use something else to determine which papers we should
+                    attend to. See Fred Brooks' note (above) for more on that.
+                  </p>
+
+                  <p>
+                  <em>Indulge in intelligent skipping</em>. You do not have to
+                  read everything. You do not need to read every word of every
+                  paper. Do not be embarrassed to skip. You cannot possibly
+                  read every paper in the world; you need to ensure that the
+                  ones you spend your time on are the important ones. For some
+                  papers you need only look at the introduction and conclusion,
+                  with a glance elsewhere. For some, you will need to read the
+                  whole thing, but maybe not today. Joad says "omit the
+                  unintelligible; skip the repetitions; jump over the boring
+                  bits". You are allowed to do this!
+
+                  </p>
+
+                  <p>
+                  <em>Ensure you understand</em>. Joad says stop reading when
+                  you stop understanding, but he also says to interpret
+                  "understand" generously. If you do not understand, there is
+                  sometimes point in pressing on a little further to see if it
+                  becomes clear, but if you really do not get it, there is no
+                  point in reading on for the sake of reading on. You need to
+                  stop and say "why do I not understand?"; "is this important
+                  enough that I need to learn something else so that I can
+                  understand?"
+
+                  </p>
+                              
+                  <p>
+                  <em>Make notes</em>. The process of writing notes helps
+                  enormously with remembering. The process of having to
+                  summarise someone else's work helps enormously with
+                  understanding. <!--Exercise 1 asks you to precise the content of 
+                  a
+                  four page paper in just one page. This is a great skill to
+                  have. --> Also you need to ensure that you have made good enough
+                  notes that you will be able to find any paper again in two
+                  years time when it turns out to be important. Too many times
+                  have I heard the cry "I know that I have read a paper on
+                  exactly this problem, but I cannot remember where!"
+                  </p>
+
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="natureOfPaperModal" role="dialog">
+          <div class="content-modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h3 class="modal-title">On "Nature Of Paper"</h3>
+              </div>
+              <div class="modal-body">
+                  <p><em>Acknowledgement:</em> 
+                    This is an excerpt from the University of Cambridge's
+                    <a href="https://www.cl.cam.ac.uk/teaching/1415/C00/reading.html">
+                        Reading Skills
+                    </a> course material.
+                  </p>
+
+                  <p>
+                  The starting research student assumes that all research
+                  papers are well-written and describe good research that is
+                  both correct and important. <em>This is not true</em>.  
+                  </p>
+
+                  <p>
+                  Research papers can report <em>poor research</em>. The review
+                  process is supposed to prevent this, but it is not a perfect
+                  process and there is a fair amount of published work out
+                  there that is not good. The publication venue is a guide to
+                  likely quality. A top-rank journal or conference is unlikely
+                  to publish poor research, because the review process is
+                  fierce.  A lower-rank journal or conference is more likely to
+                  let poor research through.
+                  </p>
+
+                  <p>
+                  Published research is supposed to be correct. However, there
+                  are cases where the authors and reviewers have honestly
+                  failed to notice that their data, assumptions, proofs, or
+                  conclusions are <em>wrong</em>.
+                  </p>
+
+                  <p>
+                  A big mistake made by many new researchers is to think that
+                  every single paper is important. Of course, it was important
+                  to the authors, but it may well be reporting on a dead end, a
+                  trivial result, a system that does not work well, or an idea
+                  that has been superseded. So you will find that many papers
+                  are <em>unimportant</em>, at least with respect to your
+                  particular research area.
+                  </p>
+
+                  <p>
+                  Even if a paper is good research, correct, and important, it
+                  may <em>not be well written</em>. Sadly, there are some
+                  papers that are incomprehensible. It is wrong to assume that
+                  the authors are trying to hide something in their poor
+                  writing, though this may be the case. Often it is just poor
+                  writing skills.  
+                  </p>
+                  
+                  <!--
+                  <p>
+                  Part of this course is to help you to learn
+                  how to ensure that your papers are well written.
+                  </p>
+                  -->
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="contactModal" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h3 class="modal-title">Contact Information @ VSU</h3>
+              </div>
+              <div class="modal-body">
+                <p><em>Office:</em>Room 302Sc Hunter McDaniel Building</p>
+                <p><em>Telephone:</em> (804)524-5428</p>
+                <p><em>E-mail:</em> hchen (at) vsu (dot) edu</p>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <script 
+            type="text/javascript" 
+            src="resources/js/footer.js">
+        </script>
+    </footer>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- Google Analytic -->
+    <script type="text/javascript" src="resources/js/google_analytics.js"></script>
+  </body>
+</html>
