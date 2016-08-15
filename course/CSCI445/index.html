@@ -1,9 +1,659 @@
-<html xmlns="http://www.w3.org/1999/xhtml">    
-<head>      
-    <title>Page Moved</title>      
-    <meta http-equiv="refresh" content="0;URL='2015Fall/'" />    
-</head>    
-<body> 
-    <p>This page has moved.</p> 
-</body>  
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Professor Hui Chen's undergraduate computer networking class.">
+    <meta name="keywords" content="CSCI 445, CSCI445, Computer Networks, VSU, Virginia State University">
+    <meta name="author" content="Hui Chen">
+
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>CSCI 445 Computer Communication Networks</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap theme -->
+    <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="resources/css/styles.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">CSCI 445 @ VSU</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a data-toggle="modal" data-target="#contactInfoModal">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container" role="main">
+
+        <div class="page-header">
+            <h1>CSCI 445 Computer Communication Networks<br/>
+                <small>by <a href="/">Hui Chen, Ph.D.</a></small></h1>
+        </div>
+
+        <h2>Overview</h2>
+        <p>
+            This is an undergraduate and graduate combined computer networking
+            class that cover a wide range of topics in computer networking. It consists of
+            lectures, labs, and various assigments. 
+        </p>
+
+        <!--
+        <h2>Syllabus</h2>
+        <p>
+            Download it in <a href="CSCI445syl.pdf">a PDF file</a>
+        </p>
+        -->
+
+
+        <h2>Textbook</h2>
+        <p>
+            Larry L. Peterson and Bruce S. Davie, <a
+            href="http://proquest.safaribooksonline.com/book/networking/9780123850591">Computer
+            Networks: A Systems Approach, 5th Ed.</a>, 
+            Morgan Kaufmann, 2011. ISBN-10: 0123850592. 
+            ISBN-13: 978-0123850591.
+        </p>
+
+        <h2>Reference Books</h2>
+        <p>
+        Andrew S. Tanenbaum, <a href="http://proquest.safaribooksonline.com/book/networking/9780133485936">Computer Networks</a>, 5th Ed. Prentice
+        Hall PTR, Saddle River, New
+        Jersey 07458, USA, 2010, ISBN-10: 0132126958, ISBN-13: 978
+        -0132126953.
+        </p>
+
+        <p>
+        James F. Kurose and Keith W. Ross, Computer Networking: A 
+        Top-Down Approach, 5th
+        Ed., Addison Wesley, 2009, ISBN: 0-13-607967-9
+        </p>
+            
+        <!--
+        <h2>Class Schedule and Material</h2>
+
+        <div class="class-schedule">
+            <ol class="list-group">
+              <li class="list-group-item">
+                <h3>
+                    <span class="badge">08/18</span>
+                    <a href="./lecture/lecture01.pdf">Fundamentals: Concepts</a>
+                </h3>
+                <div class="lesson-detail">
+                    <p>
+                        <em>Resources:</em>
+                        <a href="./lecture/lecture01_suppl.pdf">VSU Library Off-Campus Access</a>
+                    </p>
+                    <p>
+                        <em>Assignment:</em> 
+                        Read Sections 1.1 - 1.3 of the textbook
+                        and 
+                        <a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=%26arnumber=5534584">An early history of the internet</a>
+                    </p>
+                </div>
+              </li>
+
+              <li class="list-group-item">
+                <h3>
+                    <span class="badge">08/20 - 08/24</span>
+                    <a href="./lecture/lecture02.pdf">Fundamentals: Bandwidth
+                    and Latency</a>
+                </h3>
+                <div class="lesson-detail">
+                    <p>
+                        <em>Assignment:</em> 
+                        Read Section 1.5 of the textbook
+                        and complete Exercises L2-1, L2-2, and L2-3 
+                    </p>
+                </div>
+              </li>
+
+              <li class="list-group-item">
+                <h3>
+                    <span class="badge">08/26</span>
+                    <a href="./lecture/lecture03.pdf">
+                    Encoding and Framing
+                    </a>
+                </h3>
+                <div class="lesson-detail">
+                    <p>
+                        <em>Assignment:</em> 
+                        Read Sections 2.1 - 2.3 of the textbook
+                        and complete Exercises L3-1, L3-2, and L3-3
+                    </p>
+                    <p>
+                        <em>Student Presentation Assignment:</em>
+                        See lesson plan on 09/09
+                    </p>
+                </div>
+              </li>
+
+              <li class="list-group-item">
+                <h3>
+                    <span class="badge">08/31</span>
+                    <a href="./lecture/lecture04.pdf">
+                    Error Detection
+                    </a>
+                </h3>
+                <div class="lesson-detail">
+                    <p>
+                        <em>Assignment:</em> 
+                        Read Section 2.4 of the textbook
+                        and complete Exercises L4-1 and L4-2
+                    </p>
+                </div>
+              </li>
+
+              <li class="list-group-item">
+                <h3>
+                    <span class="badge">09/02</span>
+                    <a href="./lecture/lecture05.pdf">
+                    Reliable Transmission and Examples in Point-to-Point Networks
+                    </a>
+                </h3>
+                <div class="lesson-detail">
+                    <p>
+                        <em>Assignment:</em> 
+                        Read Sections 2.5 of the textbook
+                        and complete Exercises L5-1 and L5-2
+                    </p>
+                </div>
+              </li>
+
+              <li class="list-group-item">
+                <h3>
+                    <span class="badge">09/07</span>
+                    Labor Day Holiday; No Class. 
+                </h3>
+              </li>
+
+              <li class="list-group-item">
+                <h3>
+                    <span class="badge">09/09</span>
+                    <a href="./lecture/lecture06.pdf">
+                    Media Access Control and Examples in Multiple-Access Networks
+                    </a>
+                </h3>
+                <div class="lesson-detail">
+                    <p>
+                        Student presentation on: 
+                        <a href="http://conferences.sigcomm.org/sigcomm/2011/papers/sigcomm/p134.pdf">Broadband Internet Performance: A View From the Gateway</a>
+                    </p>
+                    <p>
+                        <em>Assignment:</em> 
+                        Read Sections 2.6 of the textbook
+                        and complete Exercises L6-1 and L6-2
+                        and Chapter 4 
+                        <em>The Medium Access Control Sublayer</em>
+                        of in Reference book <em>Tanenbaum 2010</em>
+                    </p>
+
+                </div>
+              </li>
+
+              <li class="list-group-item">
+                <h3>
+                    <span class="badge">09/14</span>
+                    <a href="./lecture/lecture07.pdf">
+                        Socket Programming with Ethernet
+                    </a>
+                </h3>
+                <div class="lesson-detail">
+                    <p>
+                        <em>Resources:</em>
+                        <a href="https://www.dropbox.com/s/0hls6x6421o920g/VM_Base_Debian_8.x_en.7z?dl=0">Debian Virtual Machine Image at Dropbox.com</a>;
+                        <a href="http://1drv.ms/1Ze02D9">Debian Virtual Machine Image at Onedrive.com</a>;
+                        <a href="lecture/vmsetup.pdf">Setting Up Virtual Machines</a>
+                    </p>
+                    <p>
+                        <em>Assignment:</em> 
+                        Read section 1.4 of the textbook and complete
+                        <a href="lecture/ethernet.pdf">Homework 1</a> and check out 
+                        <a href="http://beej.us/guide/bgnet/">Beej's Guide to Network Programming</a>
+                        by Brian Hall. 
+                    </p>
+                </div>
+              </li>
+
+              <li class="list-group-item">
+                <h3>
+                    <span class="badge">09/16</span>
+                    <a href="./lecture/lecture08.pdf">
+                        Packet Switching
+                    </a>
+                </h3>
+                <div class="lesson-detail">
+                    <p>
+                        <em>Assignment:</em> 
+                        Read section 3.1.1 - 3.1.3 of the textbook 
+                    </p>
+                </div>
+              </li>
+
+              <li class="list-group-item">
+                <h3>
+                    <span class="badge">09/21</span>
+                    <a href="./lecture/lecture09.pdf">
+                        Bridges and LAN Switches
+                    </a>
+                </h3>
+                <div class="lesson-detail">
+                    <p>
+                        <em>Assignment:</em> 
+                        Read section 3.1.4 of the textbook 
+                    </p>
+                </div>
+              </li>
+
+              <li class="list-group-item">
+                <h3>
+                    <span class="badge">09/23</span>
+                    <a href="./lecture/lecture10.pdf">
+                        Simple Internetworking: Concepts
+                    </a>
+                </h3>
+                <div class="lesson-detail">
+                    <p>
+                        <em>Topic</em>:
+                        internetworking, IPv4 packet format, IPv4 classful
+                        and classless addressing, address resolution (ARP),
+                        host configuration (DHCP), error reporting (ICMP),
+                        virtual networks and tunnels
+                    </p>
+                    <p>
+                        <em>Assignment:</em> 
+                        Read section 3.2 of the textbook 
+                    </p>
+                </div>
+              </li>
+
+              <li class="list-group-item">
+                <h3>
+                    <span class="badge">09/28</span>
+                    <a href="./lecture/lecture11.pdf">
+                        Simple Internetworking: Addressing Revisited
+                    </a>
+                </h3>
+                <div class="lesson-detail">
+                    <p>
+                        <em>Topic</em>:
+                        Subnetting and Clasless Addressing
+                    </p>
+                    <p>
+                        <em>Assignment:</em> 
+                        Read section 3.2 of the textbook. Complete 
+                        <a href="assignment/inetsetup1.pdf">mini-project 1</a> in which you are to configure
+                        an IPv4 interwork using Linux virtual machines.
+                    </p>
+                </div>
+              </li>
+
+
+              <li class="list-group-item">
+                <h3>
+                    <span class="badge">09/30</span>
+                    Midterm Exam
+                </h3>
+              </li>
+
+              <li class="list-group-item">
+                <h3>
+                    <span class="badge">10/05</span>
+                    Fall break (Monday October 5 - Tuesday October 6, 2015 ). No classes
+                </h3>
+              </li>
+
+              <li class="list-group-item">
+                <h3>
+                    <span class="badge">10/07</span>
+                    <a href="./lecture/lecture12.pdf">
+                        Simple Internetworking: Routing
+                    </a>
+                </h3>
+                <div class="lesson-detail">
+                    <p>
+                        <em>Topic</em>:
+                        Intradomain routing algorithms including
+                        distance-vector (RIP) and link-state (OSPF) routing
+                        algorithms, and link costs
+                    </p>
+                    <p>
+                        <em>Assignment:</em> 
+                        Read section 3.3 of the textbook 
+                    </p>
+                </div>
+              </li>
+
+              <li class="list-group-item">
+                <h3>
+                    <span class="badge">10/12 - 10/14</span>
+                    <a href="./lecture/lecture14.pdf">
+                        Global Internetworking: Interndomain Routing and MPLS
+                    </a>
+                </h3>
+                <div class="lesson-detail">
+                    <p>
+                        <em>Topic</em>:
+                        Evolution of the Global Internet, interdomain
+                        routing (BGP), MPLS, virtual 
+                        private networks and tunnels, and routing among
+                        mobile devices
+                    </p>
+                    <p>
+                        <em>Assignment:</em> 
+                        Read section 4.1.1, 4.1.2, 4.2 - 4.5 of the textbook; 
+                        Project 1 and Project 2 (network design and implementation
+                        using Linux virtual machines);
+                    </p>
+                </div>
+              </li>
+
+
+              <li class="list-group-item">
+                <h3>
+                    <span class="badge">10/19 - 10/21</span>
+                    <a href="./lecture/lecture15_ipv6.pdf">
+                        Global Internetworking: Transition to IPv6
+                    </a>
+                </h3>
+                <div class="lesson-detail">
+                    <p>
+                        <em>Topic</em>:
+                        Evolution of the Global Internet,
+                        IPv6, transition to IPv6, multicasting, and 
+                        mobile IP
+                    </p>
+                    <p>
+                        <em>Assignment:</em> 
+                        Read section 4.1.3 of the textbook 
+                        and additional research papers and technical reports;
+                        Project 3 (network design and implementation for
+                        IPv4 to IPv6 transition using Linux virtual machines)
+                    </p>
+                </div>
+              </li>
+
+              <li class="list-group-item">
+                <h3>
+                    <span class="badge">10/26 - 10/28</span>
+                    <a href="./lecture/lecture16_e2e_splitted.pdf">
+                        End-to-End Protocols
+                    </a>
+                </h3>
+                <div class="lesson-detail">
+                    <p>
+                        <em>Topic</em>:
+                        Simple demultiplexer (UDP), reliable byte stream (TCP), 
+                        and transport for real-time applications (RTP)
+                    </p>
+                    <p>
+                        <em>Assignment:</em> 
+                        Read sections 5.1, 5.2, and 5.4 of the textbook;
+                    </p>
+                </div>
+              </li>
+
+              <li class="list-group-item">
+                <h3>
+                    <span class="badge">11/02</span>
+                    Socket Programming with 
+                    <a href="./lecture/lecture13_ip_socket.pdf">
+                        IP
+                    </a>,
+                    UDP and TCP
+                </h3>
+                <div class="lesson-detail">
+                    <p>
+                        <em>Topic</em>:
+                        Socket API for programming with IP, UDP, and TCP 
+                        protocols
+                    </p>
+                    <p>
+                        <em>Resources:</em>
+                        Sample programs are in Blackboard;
+                        Linux (Ubuntu 14.04) Virtual Machine for VirtualBox; 
+                    </p>
+                    <p>
+                        <em>Assignment:</em> 
+                        Read section 1.4 of the textbook and complete
+                        Homework 2 and check out 
+                        <a href="http://beej.us/guide/bgnet/">Beej's Guide to Network Programming</a>
+                        by Brian Hall. 
+                    </p>
+                </div>
+              </li>
+
+              <li class="list-group-item">
+                <h3>
+                    <span class="badge">11/04 - 11/11</span>
+                        Congestion Control and Resource Allocation
+                </h3>
+                <div class="lesson-detail">
+                    <p>
+                        <em>Topic</em>:
+                        Resource allocation, queuing disciplines, 
+                        TCP congestion control, congestion-avoidance
+                        mechanisms, and quality of service
+                    </p>
+                    <p>
+                        <em>Assignment:</em> 
+                        Read sections 6.1 - 6.5 of the textbook;
+                        Team mini-research project initiation (Project 4)
+                    </p>
+                    <p>
+                        Student presentation on: 
+                        <a href="https://dl.acm.org/citation.cfm?id=2504730.2504741">Measuring and Mitigating Web Performance Bottlenecks in Broadband Access Networks</a>
+                    </p>
+                </div>
+              </li>
+
+              <li class="list-group-item">
+                <h3>
+                    <span class="badge">11/16</span>
+                    <a href="./lecture/lecture19_dns.pdf">
+                        Infrastructure Services: Name Service 
+                    </a>
+                </h3>
+                <div class="lesson-detail">
+                    <p>
+                        <em>Topic</em>:
+                        Name Service (DNS) and E-mail
+                    </p>
+                    <p>
+                        <em>Assignment:</em> 
+                        Read sections 9.3.1 and 9.1.1 of the textbook;
+                        Checkpoint for Project
+                    </p>
+                    <p>
+                        <em>Student Presentation on:</em>
+                        Ankit Singla, Balakrishnan Chandrasekaran, P. Brighten
+                        Godfrey, and Bruce Maggs. 2014. 
+                        <a href="https://dl.acm.org/citation.cfm?id=2673876">The Internet at the
+                            Speed of Light</a>. 
+                        In Proceedings of the 13th ACM Workshop
+                        on Hot Topics in Networks (HotNets-XIII). ACM, New
+                        York, NY, USA, , Pages 1 , 7 pages.
+                        DOI=<a href="http://dx.doi.org/10.1145/2670518.2673876">
+                        http://dx.doi.org/10.1145/2670518.2673876
+                        </a>
+                    </p>
+                </div>
+              </li>
+
+              <li class="list-group-item">
+                <h3>
+                    <span class="badge">11/18</span>
+                        Infrastructure Services: Network Management
+                </h3>
+                <div class="lesson-detail">
+                    <p>
+                        <em>Topic</em>:
+                        Network management (SNMP)
+                    </p>
+                    <p>
+                        <em>Assignment:</em> 
+                        Read sections 9.3.2 of the textbook;
+                        Checkpoint for Project
+                    </p>
+                </div>
+              </li>
+
+              <li class="list-group-item">
+                <h3>
+                    <span class="badge">11/23 - 11/25</span>
+                    <a href="./lecture/lecture21_netsec.pdf">
+                        Network Security
+                    </a>
+                </h3>
+                <div class="lesson-detail">
+                    <p>
+                        <em>Topic</em>:
+                        Introduction to security policies, enforcing mechanisms, 
+                        cryptographic building blocks, key distribution, 
+                        authentication, and example systems (PGP, SSH, TLS,
+                        SSL, HTTPS, IPsec, and wireless security) 
+                    </p>
+                    <p>
+                        <em>Assignment:</em> 
+                        Read sections 8.1 - 8.5 of the textbook 
+                    </p>
+                </div>
+              </li>
+
+
+              <li class="list-group-item">
+                <h3>
+                    <span class="badge">11/26</span>
+                    Thanksgiving Holiday
+                </h3>
+              </li>
+
+              <li class="list-group-item">
+                <h3>
+                    <span class="badge">11/30</span>
+                    World Wide Web and Content Distribution Networks
+                </h3>
+                <div class="lesson-detail">
+                    <p>
+                        <em>Topic</em>:
+                        World Wide Web (HTTP), Web Service, content distribution networks
+                    </p>
+                    <p>
+                        <em>Assignment:</em> 
+                        Read sections 9.1.2, 9.1.3, and 9.4.3 of the textbook; 
+                    </p>
+                    <p>
+                        <em>Student Presentation on:</em>
+                        Ramakrishnan Durairajan, Paul Barford, Joel Sommers,
+                        and Walter Willinger. 2015. <a href="https://dl.acm.org/citation.cfm?id=2787499">InterTubes: A Study of the
+                            US Long-haul Fiber-optic Infrastructure</a>. In Proceedings
+                        of the 2015 ACM Conference on Special Interest Group on
+                        Data Communication (SIGCOMM '15). ACM, New York, NY,
+                        USA, 565-578.
+                        DOI=<a href="http://dx.doi.org/10.1145/2785956.2787499">
+                        http://dx.doi.org/10.1145/2785956.2787499</a>
+                    </p>
+                </div>
+              </li>
+
+              <li class="list-group-item">
+                <h3>
+                    <span class="badge">12/02</span>
+                    Project and Paper Presentations (Last day of class in Fall 2015)
+                </h3>
+              </li>
+
+              <li class="list-group-item">
+                <h3>
+                    <span class="badge">12/03</span>
+                    Reading Day. Senior Project Presentation. 
+                </h3>
+              </li>
+
+              <li class="list-group-item">
+                <h3>
+                    <span class="badge">12/04 - 12/09</span>
+                    Final Examination Week
+                </h3>
+                <div class="lesson-detail">
+                    <p>
+                        <em>CSCI445/545 Final Exam</em>:
+                    </p>
+                    <p>
+                        6:00 - 8:00PM Monday, December 7, 2015 at HM 14S
+                    </p>
+                </div>
+              </li>
+
+
+            </ol>
+        </div>
+        -->
+        
+
+
+        <div class="modal fade" id="contactInfoModal" role="dialog">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Contact Information @ VSU</h4>
+              </div>
+              <div class="modal-body">
+                <p><em>Office:</em>Room 302Sc Hunter McDaniel Building</p>
+                <p><em>Telephone:</em> (804)524-5428</p>
+                <p><em>E-mail:</em> hchen (at) vsu (dot) edu</p>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+
+    </div><!-- /.container -->
+
+    <footer class="footer">
+        <script 
+            type="text/javascript" 
+            src="resources/js/footer.js">
+        </script>
+    </footer>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- Google Analytic -->
+    <script type="text/javascript" src="resources/js/google_analytics.js"></script>
+  </body>
 </html>
