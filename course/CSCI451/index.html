@@ -76,7 +76,7 @@
 
         <h2>Syllabus</h2>
         <p>
-        You may download the <a href="notes/syllabus.pdf">CSCI 451 Syllabus</a> in a PDF file.
+        You may download the <a href="./notes/syllabus.pdf">CSCI 451 Syllabus</a> in a PDF file.
         </p>
 
 
@@ -135,7 +135,7 @@
                 <li class="list-group-item">
                     <h3>
 					    <span class="badge">08/15 - 08/17</span>
-                        <a href="notes/lecture01_overview.pdf" title="Course Overview
+                        <a href="./notes/lecture01_overview.pdf" title="Course Overview
                             and Introduction to Computer Security">Course
                         Overview and Introduction to Computer Security</a>
                     </h3>
@@ -171,44 +171,78 @@
                     </div>
                 </li>
 
-				<li class="list-group-item">
-                    <h3>
-                        <span class="badge">08/19 - 08/22</span>
-                            Access Control Matrix
-                    </h3>
-                    <div class="lesson-detail">
-                        <p>
-                            <em>Topic</em>: Access Control Matrix
-                        </p>
-                        <p>
-                            <em>Reading</em>:
-                        </p>
-                        <div class="list-group">
-                            <a class="list-group-item"
-                                    href="http://proquest.safaribooksonline.com/book/networking/security/0321247442">
-                                    Sections 2.1 and 2.2 of Textbook</a>
-                            <a class="list-group-item"
-                                    href="http://proquest.safaribooksonline.com/book/networking/security/0321247442">
-                                    Sections 2.3, 2.4, and 2.5 of Textbook</a>
-                        </div>
-                        <p>
-                            <em>Assignment</em>:
-                        </p>
-                        <div class="list-group">
-                            <div class="list-group-item">
-                                (Homework L2-1) 
-                                <a href="http://proquest.safaribooksonline.com/book/networking/security/0321247442/an-overview-of-computer-security/ch01lev1sec11">
-                                    questions 1(a), 1(c), 1(e) and 1(g) in
-                                    exercises 1.11 in the textbook (page 22)
-                                </a>
-                                    and 
-                                <a href="http://proquest.safaribooksonline.com/book/networking/security/0321247442/access-control-matrix/ch02lev1sec6">
-                                    question 1(a) in exercises 2.6 in the textbook (page 35)
-                                </a>
-                            </div>
-                        </div>
+
+
+                <li class="list-group-item"><a id="cyptography1"></a>
+                <h3>
+					<span class="badge">08/19 - 08/22</span>
+                    <a href="./notes/lecture02_basic_cryptography.pdf">Basic Cryptography I</a>
+                </h3>
+                <div class="lesson-detail">
+                    <p>
+                    <em>Topic</em>:
+					Transposition Ciphers; &nbsp;
+					Substitution Ciphers; &nbsp;
+					Vigenere Cipher; &nbsp;
+					Simple Cryptanalysis; &nbsp;
+                    </p>
+
+                    <p><em>Reading</em>:
+                    <div class="list-group">
+                        <a class="list-group-item"
+                            href="http://proquest.safaribooksonline.com/book/networking/security/0321247442">
+                        Sections 8.1 - 8.2.2 of Textbook</a>
+                        <a class="list-group-item"
+                            href="./2015Fall/notes/notes_on_ic.pdf">
+                            The instructor's notes on Index of Coincidence
+                        </a>
                     </div>
-				</li>
+                    <p><em>Program</em>:
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            Making Vigenere Tableau in: 
+                                <a href="./src/vigeneretableau/vigeneretable.cpp">C++</a>; &nbsp;
+                                <a href="./src/vigeneretableau/vigeneretable.c">C</a>; &nbsp;
+                                <a href="./src/vigeneretableau/VigenereTable.java">Java</a>; &nbsp;
+                                and <a href="./src/vigeneretableau/vigeneretable.m">Matlab/Octave</a>
+                        </li>
+                        <li class="list-group-item">
+                            <em>Attacking Caesar Cipher</em>:
+                                <a href="src/caesar/attackcaesar.m">attackcaesar.m</a> &nbsp;
+                        </li>
+                        <li class="list-group-item">
+                            <em>Attacking Vigenere Cipher</em>:
+                                <a href="./src/vigenere/readline.m">readline.m</a> &nbsp;
+                                <a href="./src/vigenere/findcommonsubstrings.m">findcommonsubstrings.m</a> &nbsp;
+                                <a href="./src/vigenere/computeic.m">computeic.m</a> &nbsp;
+                                <a href="./src/vigenere/guesskey.m">guesskey.m</a> &nbsp;
+                                <a href="./src/vigenere/vigenere.m">vigenere.m</a> &nbsp;
+                                <a href="./src/vigenere/computeletterfreq.m">computeletterfreq.m</a>;
+                         </li>
+                    </ul>
+                     <p>
+                        <em>Assignment</em>: 
+                     </p>
+                     <div class="list-group">
+                        <div class="list-group-item">
+                            Exercise L2-1, L2-2, L2-3, L2-4, and L2-5. See lecture notes.
+                        </div>
+                        <div class="list-group-item">
+                            <em>Ciphertext for Exercise L2-5</em>: &nbsp;
+                            <a href="./assignment/vigenere/pg.txt">pg.txt</a> &nbsp;
+                            <a href="./assignment/vigenere/tc.txt">tc.txt</a>;
+                        </div>
+                        <div class="list-group-item">
+                             (Homework L2-1) 
+                                <a href="http://proquest.safaribooksonline.com/book/networking/security/0321247442/basic-cryptography/ch08lev1sec7">
+                                 question 8 in exercise 8.7 in the
+                                 textbook (page 120)
+                                </a>
+                        </div>
+                     </div>
+                </div>
+				</li>		
+
 
             </ul>
         </div>
