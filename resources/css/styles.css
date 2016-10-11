@@ -33,7 +33,7 @@ body {
  * counting papers
  * */
 div.paper {
-    counter-reset: allcounter acounter year 2016;
+    counter-reset: allcounter acounter year 2017;
 }
 
 div.paper ol.journal {
