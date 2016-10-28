@@ -44,3 +44,7 @@ body {
     margin-bottom: 0;
 }
 
+span.highlighted  {
+    color: red;
+    font-weight: bold;
+}
